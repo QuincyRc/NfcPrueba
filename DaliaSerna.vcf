@@ -1,1 +1,10 @@
-
+BEGIN:VCARD
+VERSION:3.0
+N:Serna;Dalia;;;
+FN:Dalia Serna
+ORG:Opormex
+TITLE:X
+TEL;TYPE=CELL:+525500000000
+EMAIL:osiris@roa.mx
+URL:https://roa.mx
+END:VCARD
