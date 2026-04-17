@@ -28,7 +28,6 @@
       overflow: hidden;
     }
 
-    /* Curvas decorativas */
     body::before,
     body::after {
       content: "";
@@ -71,22 +70,27 @@
       text-align: center;
     }
 
-    /* AVATAR CON LOGO */
     .avatar {
-      width: 96px;
-      height: 96px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
       margin: 0 auto 18px;
-      overflow: hidden;
-      border: 4px solid rgba(255,255,255,0.9);
-      box-shadow: 0 8px 22px rgba(19, 129, 79, 0.25);
       background: #ffffff;
+      border: 4px solid rgba(255,255,255,0.95);
+      box-shadow: 0 10px 24px rgba(19, 129, 79, 0.18);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      overflow: hidden;
     }
 
     .avatar img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
+      object-position: center;
+      display: block;
     }
 
     h1 {
@@ -177,6 +181,11 @@
         padding: 28px 18px;
       }
 
+      .avatar {
+        width: 105px;
+        height: 105px;
+      }
+
       h1 {
         font-size: 27px;
       }
@@ -186,10 +195,8 @@
 
 <body>
   <main class="card">
-
-    <!-- LOGO AQUÍ -->
     <div class="avatar">
-      <img src="logo.png" alt="Logo">
+      <img src="logo.png" alt="Logo Pacific Bird Solutions">
     </div>
 
     <h1>Dalia Serna</h1>
@@ -207,7 +214,7 @@
         Guardar contacto
       </a>
 
-      <a class="btn btn-secondary" href="https://wa.me/528611358408" target="_blank">
+      <a class="btn btn-secondary" href="https://wa.me/528611358408" target="_blank" rel="noopener noreferrer">
         WhatsApp
       </a>
     </div>
@@ -215,7 +222,6 @@
     <div class="footer">
       Tarjeta digital NFC
     </div>
-
   </main>
 </body>
 </html>
